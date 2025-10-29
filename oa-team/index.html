@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-container {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Site</h1>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="https://source.unsplash.com/random/800x600?nature" alt="Natureza">
+            <p>Imagem da Natureza</p>
+        </div>
+        <div class="image-container">
+            <img src="https://source.unsplash.com/random/800x600?city" alt="Cidade">
+            <p>Imagem da Cidade</p>
+        </div>
+        <div class="image-container">
+            <img src="https://source.unsplash.com/random/800x600?technology" alt="Tecnologia">
+            <p>Imagem de Tecnologia</p>
+        </div>
+    </div>
+</body>
+</html>
